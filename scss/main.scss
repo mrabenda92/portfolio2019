@@ -1,0 +1,91 @@
+@import "modules/fonts.scss";
+@import "modules/colors";
+@import "modules/keyframes";
+
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.portfolio {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.contact_part {
+  display: none;
+}
+
+@media(min-width: 1070px) {
+  .contact_part {
+    display: block;
+    height: 100%;
+    width: 28%;
+  }}
+
+.main_content {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+@media(min-width: 1070px) {
+.main_content {
+  width: 72%;
+}}
+
+.all_sections {
+  height: 90vh;
+  width: 100%;
+  background-image: url('../pict/img2.jpg');
+  position: relative;
+  background-position: 20%;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease-in-out;
+  font-size: 16px;
+}
+
+@media(min-width: 407px) {
+  .all_sections {
+    font-size: 18px;
+  }}
+
+
+  @media(min-width: 460px) {
+    .all_sections {
+      font-size: 20px;
+    }}
+
+  @media(min-width: 1070px) {
+    .all_sections {
+      background-position: 67%;
+    }}
+
+.svg-inline--fa {
+  font-size: 4px;
+  justify-self: center;
+  font-weight: 600;
+}
+
+img {
+  width: 200px;
+  height: 220px;
+  border: 2px solid gray;
+}
+
+@import "partials/contact.scss";
+@import "partials/nav.scss";
+@import "partials/about-me.scss";
+@import "partials/projects.scss";
+@import "partials/footer.scss";
+
+
+
+

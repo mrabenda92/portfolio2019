@@ -1,0 +1,76 @@
+.contact_part {
+    background-image: url(../pict/img1.jpg);
+    position: relative;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    box-shadow: 1px -3px 4px 6px rgb(188, 188, 252) inset;
+
+    &__list {
+        background-color: rgb(15, 15, 20);
+        opacity: 0.9;
+        position: absolute;
+        width: 100%;
+        min-height: 250px;
+        bottom: 0;
+        padding: 25px;
+        box-shadow: 1px -2px 4px 6px rgb(188, 188, 252) inset;
+
+        .contact_text {
+            animation: slideInContact 2s ease;
+
+            h3 {
+                color: rgb(54, 54, 194);
+
+                span {
+                    color: white;
+                    font-size: 90%;
+                }
+            }
+
+            p {
+            padding: 2px;
+            transition: all 0.5s 0.25s;
+            color: rgb(219, 123, 219);
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+                
+                &:hover {
+                    transform: scale(1.05) translateX(20px);
+                    color: white;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+            }
+
+    }}
+
+    
+}
+
+.mobile_contact {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    text-align: justify;
+    position: relative;
+    animation: showContent 2s ease-in-out;
+    left: -10000%;
+    transition: all 5s 0.5s;
+    display: none;
+    text-align: center;
+
+    p {
+        padding: 10px;
+    }
+}
+
+.show_mobileContact {
+    left: 0;
+    display: block;
+}
